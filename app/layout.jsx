@@ -7,6 +7,7 @@ import { Box, ColorModeScript } from '@chakra-ui/react';
 const inter = Inter({ subsets: ['latin'] });
 import theme from './theme';
 import CustomAlert from '@/components/Alert';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Veerge',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <Header />
           <Navbar />
           {children}
+
           <Box display="flex">
             <Box ml="auto" mr={2}>
               <Box position={'relative'} bottom={'200px'}>
@@ -30,6 +32,7 @@ export default function RootLayout({ children }) {
               </Box>
             </Box>
           </Box>
+          <Footer />
         </Providers>
       </body>
     </html>

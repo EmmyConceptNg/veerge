@@ -29,7 +29,7 @@ export default function CustomAlert() {
           position="relative"
           right={-1}
           onClick={onClose}
-          bgColor={'white'}
+          color={'white'}
         />
       </Alert>
     </Box>
